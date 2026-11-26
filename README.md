@@ -13,8 +13,8 @@ Repositório oficial com os códigos desenvolvidos no Trabalho de Conclusão de 
 - **Atuação:** Driver dupla ponte H L293DNE controlando dois motores DC (cinemática diferencial).
 
 ## Estrutura do Repositório
-- `/emissor_vlc`: Firmware do ESP32-S3 transmissor (Servidor Web embarcado via Wi-Fi AP, montagem dos pacotes de 32 bytes, codificação Manchester e disparo SPI/DMA).
-- `/receptor_vlc_agv`: Firmware do ESP32-S3 receptor (captura de bordas via `GPIO_IN_REG` e `ESP.getCycleCount()`, recuperação dinâmica de clock pelo preâmbulo, decodificação Manchester e máquina de estados não-bloqueante para controle PWM dos motores).
+- `/emissor_manchester_raw`: Firmware do ESP32-S3 transmissor (Servidor Web embarcado via Wi-Fi AP, montagem dos pacotes de 32 bytes, codificação Manchester e disparo SPI/DMA).
+- `/receptor_manchester_raw`: Firmware do ESP32-S3 receptor (captura de bordas via `GPIO_IN_REG` e `ESP.getCycleCount()`, recuperação dinâmica de clock pelo preâmbulo, decodificação Manchester e máquina de estados não-bloqueante para controle PWM dos motores).
 
 ## Bibliotecas Necessárias (Arduino IDE)
 Para compilar o código do **Emissor**, instale:
